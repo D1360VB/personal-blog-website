@@ -180,6 +180,8 @@ html {
 
 .text-tiny { font-size: var(--fs-5); }
 
+.text-paragraph {font-size: var(--fs-3);}
+
 
 
 
