@@ -7,6 +7,9 @@
  */
 
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 
@@ -15,44 +18,41 @@
 \*-----------------------------------*/
 
 .light-theme {
-
   /**
-   * light theme colors 
+   * Gruvbox Light theme colors
    */
 
-  --background-primary: hsl(0, 0%, 100%);
-  --background-secondary: hsl(0, 0%, 97%);
+  --background-primary: #fbf1c7;   /* bg0 */
+  --background-secondary: #f2e5bc; /* bg1 */
 
-  --action-primary: hsl(214, 32%, 91%);
-  --action-secondary: hsl(210, 38%, 95%);
+  --action-primary: #ebdbb2;       /* bg2 */
+  --action-secondary: #d5c4a1;     /* bg3 */
 
-  --foreground-primary: hsl(218, 23%, 23%);
-  --foreground-secondary: hsl(216, 15%, 52%);
-  --foreground-tertiary: hsl(214, 20%, 69%);
+  --foreground-primary: #3c3836;   /* fg */
+  --foreground-secondary: #504945; /* fg dim */
+  --foreground-tertiary: #7c6f64;  /* fg weaker */
 
-  --accent: hsl(229, 76%, 66%);
-
+  --accent: #458588;               /* blue (accent) */
 }
 
 .dark-theme {
-
   /**
-   * dark theme colors 
+   * Gruvbox Dark theme colors
    */
 
-  --background-primary: hsl(218, 23%, 23%);
-  --background-secondary: hsl(220, 26%, 14%);
+  --background-primary: #282828;   /* bg0 */
+  --background-secondary: #1d2021; /* bg hard */
 
-  --action-primary: hsl(216, 15%, 52%);
-  --action-secondary: hsl(218, 23%, 23%);
+  --action-primary: #3c3836;       /* bg1 */
+  --action-secondary: #504945;     /* bg2 */
 
-  --foreground-primary: hsl(210, 38%, 95%);
-  --foreground-secondary: hsl(211, 25%, 84%);
-  --foreground-tertiary: hsl(214, 20%, 69%);
+  --foreground-primary: #ebdbb2;   /* fg */
+  --foreground-secondary: #d5c4a1; /* fg dim */
+  --foreground-tertiary: #bdae93;  /* fg weaker */
 
-  --accent: hsl(229, 76%, 66%);
-
+  --accent: #fabd2f;               /* yellow (accent) */
 }
+
 
 :root {
 
@@ -350,7 +350,7 @@ header .btn-group {
 \*-----------------------------------*/
 
 .hero {
-  background: var(--background-primary);
+  background-color: var(--background-primary);
   padding-top:    2rem;
   padding-bottom: var(--py);
   text-align: center;
