@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hacking Mexico'25 - Eco Financial Well-being - D1360VB</title>
+  <title>A Brief Analysis of the Market Value of Liga MX Teams from 2011 to the Present - D1360VB</title>
 
   <!--
     - favicon
@@ -44,10 +44,12 @@
 
         <div class="btn-group">
 
+          <!--   
           <button class="theme-btn theme-btn-mobile light">
             <ion-icon name="moon" class="moon"></ion-icon>
             <ion-icon name="sunny" class="sun"></ion-icon>
           </button>
+          -->
 
           <button class="nav-menu-btn">
             <ion-icon name="menu-outline"></ion-icon>
@@ -77,10 +79,12 @@
 
           </ul>
 
+          <!--   
           <button class="theme-btn theme-btn-desktop light">
             <ion-icon name="moon" class="moon"></ion-icon>
             <ion-icon name="sunny" class="sun"></ion-icon>
           </button>
+          -->
 
         </div>
 
@@ -155,26 +159,67 @@
 
         <div>
 
-          <h1 id="title-blk-mex25" class="h2">Hacking Mexico'25 - Eco Financial Well-being by Aladdin - BlackRock</h1>
+          <h1 id="title-blk-mex25" class="h2">A Brief Analysis of the Market Value of Liga MX Teams from 2011 to the Present</h1>
 
           <br/>
 
-          <p class="h4">
-            A hackathon it's usually a great way to practice coding while there's pressure and limited time on behalf. This was one, 
-            where mentioned factors came to test.  <a href="https://www.hackerrank.com/event/blackrock-mx-25?utm_source=engage&utm_medium=broadcast-email">
-            Hacking Mexico'25 - Eco Financial Well-being</a> was a great way to get to know Aladdin and BlackRock goals and develop a
-            related solution.
+          <p>
+           What is the value of a soccer team? And what about in the Mexican 
+           league? At first, the concept of a team's market value might seem 
+           ambiguous, but once we take a closer look, it becomes easier to 
+           grasp since the underlying ideas are actually quite simple.
           </p>
           <br/>
-            
-          <p class="h4">
-          The <a href="https://github.com/D1360VB/blk-hacking-mx25-diego-velazquez">
-          implemented solution</a> <i>(that won the 3rd place)</i> consisted in a system for self-saving and investing surpluses rounded 
-          to multiples of 100 using FastAPI in the backend and a lightweight HTML + JS frontend. 
-          It simulates how transaction rounding and certain investment rules impact long-term savings, applying restrictions 
-          and calculating inflation-adjusted compound interest.
-          solution
+          <p>
+            In this analysis, I relied on data from <a class="footer-link" 
+            href="https://www.transfermarkt.com/"> transfermakt.com</a>. 
+            To understand the approach behind these valuations, it's 
+            important to consider how Transfermarkt defines 
+            “market value.” According to the site, a variety of factors 
+            are taken into account, with much of the process based on 
+            the collective criteria of its community. 
+            For more details on how this methodology works, you can check 
+            their official explanation at <a class="footer-link" 
+            href="https://www.transfermarkt.co.in/transfermarkt-market-value-explained-how-is-it-determined-/view/news/385100"> 
+            transfermarkt.co.in/transfermarkt-market-value-explained-how-is-it-determined-/view/news/385100</a>.
           </p>
+          <br/>
+          <p>
+            In the end, the info published by our source is one that varies through time, it becomes 
+            the dataset of this work to look for the expected insights.
+          </p>
+          <br/>
+          <h3 id="title-blk-mex25" class="h3">Methodology used</h3>
+          <br/>
+          <p>
+          All valuations were gathered manually from <a class="footer-link" 
+            href="https://www.transfermarkt.mx/liga-mx-apertura/marktwerteverein/wettbewerb/MEXA/"> 
+            transfermarkt.mx/liga-mx-apertura/marktwerteverein/wettbewerb/MEXA/</a>. Taking advantage 
+            of the recorded dates, a comprehensive dataset was created, with most valuations 
+            registered twice a month at 15-day intervals since 2011.
+          </p>
+          <br/>
+          <p>
+          Using Python tools such as NumPy and pandas, charts and indicators were created
+          to make the information easier to understand, thus facilitating the analysis 
+          and discovery of insights.
+          </p>
+          <br/>
+          <p>
+          In this post, the focus will be on visualizing the evolution of market valuations among 
+          Liga MX teams over time since 2011, examining the distribution of the total value, 
+          and reflecting on the clubs that have consistently dominated as well as those that 
+          have experienced significant shifts in their valuation
+          </p>
+          <br/>
+          <h3 id="development" class="h3">Main insights</h3>
+          <br/>
+          <p>
+            Starting with the main chart, let's take a look at the overall bevahior of
+            the market valuations since 2011.
+          </p>
+          <img src="./assets/images/ligamx_valuation.png" alt="overall Valuation" class="responsive-img">
+
         </div>
 
 

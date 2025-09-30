@@ -16,6 +16,17 @@ html {
 /*-----------------------------------*\ 
   #CUSTOM PROPERTY
 \*-----------------------------------*/
+.responsive-img {
+  max-width: 100%;   /* nunca será más grande que el contenedor */
+  height: auto;      /* mantiene la proporción */
+  display: block;    /* evita espacios extra debajo de la imagen */
+  margin: 0 auto;    /* centra la imagen */
+}
+
+
+
+
+
 
 .light-theme {
   /**
@@ -179,6 +190,8 @@ html {
 .text-sm { font-size: var(--fs-4); }
 
 .text-tiny { font-size: var(--fs-5); }
+
+.text-paragraph {font-size: var(--fs-3);}
 
 
 
@@ -349,38 +362,12 @@ header .btn-group {
   #HERO SECTION
 \*-----------------------------------*/
 
-/*background-color: var(--background-primary);*/
-
 .hero {
-  background: url(../images/sea_camp.jpg) no-repeat center center;
-  background-size: cover;
-  position: relative; /* for overlay */
-  padding-top: 4rem;
+  background-color: var(--background-primary);
+  padding-top:    2rem;
   padding-bottom: var(--py);
   text-align: center;
-  color: white; /* example text color */
 }
-
-/* Optional background overlay */
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(40, 40, 40, 0.0); /* semi-transparent black */
-  z-index: 1;
-}
-
-/*
-aqua -> rgb(142 192 124)
-purple -> rgb(211 134 155)
-*/
-
-/* Text inside hero */
-.hero > * {
-  position: relative;
-  z-index: 2;
-}
-
 
 .hero .h1 {
   margin-bottom: 1rem;
@@ -857,8 +844,6 @@ footer .wrapper { text-align: center; }
   .hero { text-align: left; }
 
   .hero .container {
-    /*background: url(../images/dinamos_bg.jpg);
-    background-size: contain;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;

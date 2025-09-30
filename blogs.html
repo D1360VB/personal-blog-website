@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D1360VB</title>
+  <title>projects - D1360VB</title>
 
   <!--
     - favicon
@@ -25,32 +25,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
-<body  class="light-theme">
+<body class="light-theme">
 
   <!--
     - #HEADER
   -->
 
-  <header id="top">
+  <header>
 
     <div class="container">
 
       <nav class="navbar">
 
-        <a href="#top">
+        <a href="index.html">
           <img src="./assets/images/resized_yellow_logo.svg" alt="logo" width="150" class="logo-light">
           <img src="./assets/images/resized_blue_logo.svg" alt="logo" width="150" class="logo-dark">
         </a>
 
         <div class="btn-group">
 
-          <!--   
           <button class="theme-btn theme-btn-mobile light">
             <ion-icon name="moon" class="moon"></ion-icon>
             <ion-icon name="sunny" class="sun"></ion-icon>
           </button>
-          -->
-
 
           <button class="nav-menu-btn">
             <ion-icon name="menu-outline"></ion-icon>
@@ -63,7 +60,7 @@
           <ul class="desktop-nav">
 
             <li>
-              <a href="#top" class="nav-link">Home</a>
+              <a href="index.html" class="nav-link">Home</a>
             </li>
 
             <li>
@@ -80,12 +77,10 @@
 
           </ul>
 
-          <!--   
           <button class="theme-btn theme-btn-desktop light">
             <ion-icon name="moon" class="moon"></ion-icon>
             <ion-icon name="sunny" class="sun"></ion-icon>
           </button>
-          -->
 
         </div>
 
@@ -101,7 +96,7 @@
 
             <ul>
               <li class="nav-item">
-                <a href="#top" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
               </li>
 
               <li class="nav-item">
@@ -157,42 +152,7 @@
       - #HERO SECTION
     -->
 
-    <div id="hero" class="hero">
-
-      <div class="container">
-
-        <div class="left">
-
-          <h1 class="h1">
-            It's <b>D1360VB</b>.
-            <br>Tech enthusiast
-          </h1>
-
-          <p class="h3">
-            Data, coding, AI and more...
-          </p>
-
-          <div class="btn-group">
-            <a href="#latest_projects" class="btn btn-primary">Latest projects</a>
-            <a href="#contact" class="btn btn-secondary">Contact</a>
-          </div>
-
-        </div>
-
-        <div class="right">
-
-          <div class="pattern-bg"></div>
-          <div class="img-box">
-            <img src="./assets/images/hero.png" alt="D1360VB" class="hero-img">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
+    
 
 
 
@@ -210,26 +170,24 @@
 
         <div class="blog">
 
-          
-
-          <h2 id="latest_blogs" class="h2">Latest Blog Post</h2>
+          <h2 id="latest_blogs" class="h2">Latest Blog Posts</h2>
 
           <div class="blog-card-group">
 
             <div class="blog-card">
 
               <div class="blog-card-banner">
-                <img src="./assets/images/ligamx_valuation.png" alt="A Brief Analysis of the Market Value of Liga MX Teams from 2011 to the Present"
+                <img src="./assets/images/ligamx_valuation.png" alt="Building microservices with Dropwizard, MongoDB & Docker"
                   width="250" class="blog-banner-img">
               </div>
 
               <div class="blog-content-wrapper">
 
-                <button class="blog-topic text-tiny">Data</button>
+                <button class="blog-topic text-tiny">Database</button>
 
                 <h3>
-                  <a href="./blogs/ligaMX_valuation.html" class="h3">
-                    A Brief Analysis of the Market Value of Liga MX Teams from 2011 to the Present
+                  <a href="#" class="h3">
+                    Building microservices with Dropwizard, MongoDB & Docker
                   </a>
                 </h3>
 
@@ -251,64 +209,7 @@
                     <a href="#" class="h4">Diego Velazquez B</a>
 
                     <p class="text-sm">
-                      <time datetime="2022-01-17">Aug 20, 2025</time>
-                      <span class="separator"></span>
-                      <ion-icon name="time-outline"></ion-icon>
-                      <time datetime="PT3M">5 min</time>
-                    </p>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <button class="btn load-more" onclick="window.location.href='blogs.html';">All posts</button>
-          
-
-          <!--
-          PROJECTS 
-          -->
-
-          <h2 id="latest_projects" class="h2">Latest Projects</h2>
-
-          <div class="blog-card-group">
-
-            <div class="blog-card">
-
-              <div class="blog-card-banner">
-                <img src="./assets/images/hacking_mexico25.jpg" alt="Hacking Mexico'25 - Eco Financial Well-being"
-                  width="250" class="blog-banner-img">
-              </div>
-
-              <div class="blog-content-wrapper">
-
-                <button class="blog-topic text-tiny">Coding</button>
-
-                <h3>
-                  <a href="./projects/blk-hacking-mx25.html" class="h3">
-                    Hacking Mexico'25 - Eco Financial Well-being by Aladdin - BlackRock 
-                  </a>
-                </h3>
-
-                <p class="blog-text">
-                  <b>Project that was awarded the 3rd place</b> of the Hacking Mexico'25 - Eco Financial Well-being hackathon by <b>Aladdin - BlackRock</b>
-                </p>
-
-                <div class="wrapper-flex">
-
-                  <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="Diego Velazquez B" width="50">
-                  </div>
-
-                  <div class="wrapper">
-                    <a href="#" class="h4">Diego Velazquez B</a>
-
-                    <p class="text-sm">
-                      <time datetime="2022-01-17">Jul 20, 2025</time>
+                      <time datetime="2022-01-17">Jan 17, 2022</time>
                       <span class="separator"></span>
                       <ion-icon name="time-outline"></ion-icon>
                       <time datetime="PT3M">3 min</time>
@@ -322,8 +223,6 @@
             </div>
 
           </div>
-
-          <button class="btn load-more" onclick="window.location.href='projects.html';">All projects</button>
 
 
         </div>
@@ -341,31 +240,31 @@
 
             <a href="#" class="topic-btn">
               <div class="icon-box">
-                <ion-icon name="disc-outline"></ion-icon>
+                <ion-icon name="server-outline"></ion-icon>
               </div>
 
-              <p>AI</p>
+              <p>Database</p>
             </a>
 
             <a href="#" class="topic-btn">
               <div class="icon-box">
-                <ion-icon name="code-outline"></ion-icon>
+                <ion-icon name="accessibility-outline"></ion-icon>
               </div>
 
-              <p>Coding</p>
+              <p>Accessibility</p>
             </a>
 
             <a href="#" class="topic-btn">
               <div class="icon-box">
-                <ion-icon name="analytics-outline"></ion-icon>
+                <ion-icon name="rocket-outline"></ion-icon>
               </div>
 
-              <p>Data</p>
+              <p>Web Performance</p>
             </a>
 
           </div>
 
-          <div id="contact" class="contact">
+          <div class="contact">
 
             <h2 class="h2">Let's connect!</h2>
 
@@ -378,8 +277,8 @@
               <ul class="social-link">
 
                 <li>
-                  <a href="https://www.linkedin.com/in/diego-velazquez-balandra-082512286/" class="icon-box linkedin">
-                    <ion-icon name="logo-linkedin"></ion-icon>
+                  <a href="#" class="icon-box discord">
+                    <ion-icon name="logo-discord"></ion-icon>
                   </a>
                 </li>
 
@@ -390,8 +289,8 @@
                 </li>
 
                 <li>
-                  <a href="https://www.instagram.com/d1360vb/" class="icon-box instagram">
-                    <ion-icon name="logo-instagram"></ion-icon>
+                  <a href="#" class="icon-box facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
                   </a>
                 </li>
 
@@ -445,7 +344,7 @@
         </a>
 
         <p class="footer-text">
-          Data, coding, AI and more...
+          Data, programming, AI and more...
         </p>
 
       </div>
